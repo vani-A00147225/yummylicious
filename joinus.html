@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummylicious</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6d676;
+        }
+
+        header {
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            margin-top: 1%;
+        }
+
+        header a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 16px;
+            outline: 2px solid black;
+            background-color: orange;
+            box-shadow: 1px 1px 5px 2px #000000;
+
+            &:hover {
+                background-color: darkgreen;
+            }
+        }
+
+        header img {
+            max-height: 150px;
+            border-radius: 36px;
+            box-shadow: 1px 1px 5px 2px #888888;
+        }
+
+        .welcome-message {
+            padding-left: 6% !important;
+            padding: 30px;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-direction: column;
+
+            gap: 20px;
+            padding: 20px;
+            padding-left: 7% !important;
+            margin-top: 1%;
+        }
+
+        .image-grid div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-grid div>img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px 2px #000000;
+
+        }
+
+        .selected {
+            background-color: darkgreen;
+            color: whitesmoke;
+        }
+
+        .section-header {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-left: 7% !important;
+            padding-bottom: 1%;
+            color: rgb(206, 0, 34)
+        }
+
+        .inputcontainer {
+            padding: 8px;
+            width: 50%;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .email-input {
+            padding: 16px;
+            width: 50%;
+        }
+
+        .main {
+            padding-left: 6%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            gap: 100px;
+        }
+
+        .top-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .bottom-section {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .social-icons {
+            padding: 8px;
+            display: flex;
+            gap: 16px;
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        h2 {
+            color: rgb(206, 0, 34)
+        }
+
+        h3 {
+            font-size: 20px;
+        }
+    </style>
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div style="display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 6% !important;
+        "></div>
+        <a href="./home.html" style="all: unset;">
+            <img src="./images/Yummy.png" alt="logo" />
+        </a>
+        </div>
+        <div style="margin-left: auto; margin-right: auto;">
+            <a href="./home.html">HOME</a>
+            <a href="./trending.html">TRENDING RECIPES</a>
+            <a href="./categories.html">CATEGORIES</a>
+            <a href="#" class="selected">SUBSCRIBE</a>
+            <a href="./aboutus.html">ABOUT US</a>
+        </div>
+
+    </header>
+    <div class="main">
+        <div class="top-section">
+            <h2>Join Us here</h2>
+            <input type="email" class="email-input" placeholder="Enter your Email Address">
+        </div>
+        <div class="bottom-section">
+            <h3>Follow us</h3>
+            <div class="social-icons">
+                <img src="./images/Icons/facebook-app-symbol.png" alt="Facebook">
+                <img src="./images/Icons/instagram.png" alt="Instagram">
+                <img src="./images/Icons/email.png" alt="Email">
+                <img src="./images/Icons/youtube.png" alt="YouTube">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

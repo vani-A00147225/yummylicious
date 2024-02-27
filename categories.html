@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yummylicious</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6d676;
+        }
+
+        header {
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            margin-top: 1%;
+        }
+
+        header a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 16px;
+            outline: 2px solid black;
+            background-color: orange;
+            box-shadow: 1px 1px 5px 2px #000000;
+
+            &:hover {
+                background-color: darkgreen;
+            }
+        }
+
+        header img {
+            max-height: 150px;
+            border-radius: 36px;
+            box-shadow: 1px 1px 5px 2px #888888;
+        }
+
+        .welcome-message {
+            padding-left: 6% !important;
+            padding: 30px;
+        }
+
+        .image-grid {
+            display: flex;
+            flex-direction: column;
+
+            gap: 20px;
+            padding: 20px;
+            padding-left: 7% !important;
+            margin-top: 1%;
+        }
+
+        .image-grid div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .image-grid div>img {
+            width: 200px;
+            height: 200px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 5px 2px #000000;
+
+        }
+
+        .selected {
+            background-color: darkgreen;
+            color: whitesmoke;
+        }
+
+        .section-header {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            padding-left: 7% !important;
+            padding-bottom: 1%;
+            color: rgb(206, 0, 34)
+        }
+
+        .inputcontainer {
+            padding: 8px;
+            width: 50%;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        .category {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            flex-direction: row-reverse;
+        }
+
+        .category>p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .category>img {
+            width: 24px;
+            height: 24px;
+        }
+    </style>
+    </script>
+</head>
+
+<body>
+
+    <header>
+        <div style="display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 6% !important;
+        "></div>
+        <a href="./home.html" style="all: unset;">
+            <img src="./images/Yummy.png" alt="logo" />
+        </a>
+        </div>
+        <div style="margin-left: auto; margin-right: auto;">
+            <a href="./home.html">HOME</a>
+            <a href="./trending.html">TRENDING RECIPES</a>
+            <a href="#" class="selected">CATEGORIES</a>
+            <a href="./joinus.html">SUBSCRIBE</a>
+            <a href="./aboutus.html">ABOUT US</a>
+        </div>
+
+    </header>
+
+
+    <div class="section-header">
+        <h2>All Categories</h2>
+        <input class="inputcontainer" type="text" placeholder="Search by categories" />
+    </div>
+    <div class="section">
+        <div class="left">
+            <div class="category">
+                <img src="./images/Icons/hundred-points.png" alt="Vegan">
+                <p>Vegan</p>
+            </div>
+            <div class="category">
+                <img src="./images/Icons/hundred-points.png" alt="Vegetarian">
+                <p>Vegetarian</p>
+            </div>
+            <div class="category">
+                <p>Non-Vegetarian</p>
+            </div>
+            <div class="category">
+                <img src="./images/Icons/egg.png" alt="Eggetarian">
+                <p>Eggetarian</p>
+            </div>
+            <div class="category">
+                <img src="./images/Icons/leg.png" alt="Chicken Recipes">
+                <p>Chicken Recipes</p>
+            </div>
+            <div class="category">
+                <img src="./images/Icons/roast-chicken.png" alt="Biryani Recipes">
+                <p>Biryani Recipes</p>
+            </div>
+        </div>
+        <div class="right">
+            <div class="category">
+                <img src="./images/Icons/muffin.png" alt="Deserts">
+                <p>Deserts</p>
+            </div>
+            <div class="category">
+                <p>Appetizers</p>
+            </div>
+            <div class="category">
+                <p>Breakfast Recipes</p>
+            </div>
+            <div class="category">
+                <p>Diet Control Recipes</p>
+            </div>
+            <div class="category">
+                <p>Pulav Recipes</p>
+            </div>
+            <div class="category">
+                <img src="./images/Icons/soup.png" alt="Soup Recipes">
+                <p>Soup Recipes</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

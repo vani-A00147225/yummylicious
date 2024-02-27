@@ -1,0 +1,218 @@
+<html>
+
+<head>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f6d676;
+        }
+
+        header {
+            color: #fff;
+            padding: 15px;
+            display: flex;
+            align-items: center;
+            margin-top: 1%;
+        }
+
+        header a {
+            color: black;
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 16px;
+            outline: 2px solid black;
+            background-color: orange;
+            box-shadow: 1px 1px 5px 2px #000000;
+
+            &:hover {
+                background-color: darkgreen;
+            }
+        }
+
+        header img {
+            max-height: 150px;
+            border-radius: 36px;
+            box-shadow: 1px 1px 5px 2px #888888;
+        }
+
+        .selected {
+            background-color: darkgreen;
+            color: whitesmoke;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .section {
+            margin: 20px 0;
+        }
+
+        .section h2 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        .team {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .team-item {
+            width: 160px;
+            height: 180px;
+            margin: 10px;
+            background-color: #f0f0f0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        .team-item span {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            padding: 8px;
+        }
+
+        .social img {
+            width: 40px;
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        .social span {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+        }
+
+        .contact {
+            display: flex;
+            align-items: center;
+        }
+
+        .contact span {
+            font-size: 18px;
+            color: #333;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div style="display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-left: 6% !important;
+        "></div>
+        <a href="./home.html" style="all: unset;">
+            <img src="./images/Yummy.png" alt="logo" />
+        </a>
+        </div>
+        <div style="margin-left: auto; margin-right: auto;">
+            <a href="./home.html">HOME</a>
+            <a href="./trending.html">TRENDING RECIPES</a>
+            <a href="./categories.html">CATEGORIES</a>
+            <a href="./joinus.html">SUBSCRIBE</a>
+            <a href="#" class="selected">ABOUT US</a>
+        </div>
+
+    </header>
+    <div class="container">
+        <div class="section">
+            <h2>All About Yummylicious</h2>
+            <p>Yummylicious is a team of people working together to make the world drool on Indian cuisine. We are
+                dedicated to bringing authentic Indian food recipes in your kitchen.</p>
+        </div>
+        <div class="section">
+            <h2>Our Journey</h2>
+            <p>Founded in the year-2012. The Yummylicious team is a group of chefs working in a five-star hotel in
+                Hyderabad, India. The team of 3 chefs came along and founded this amazing platform where we can share
+                our authentic Indian recipes. Yummylicious started its own Youtube channel in 2018 and has 5M followers
+                on it. You can subscribe to Yummylicious on youtube as well.</p>
+        </div>
+        <div class="section">
+            <h2>Our Team</h2>
+            <div class="team">
+                <div class="team-item">
+                    <img src="./images/Icons/female.png" alt="Sneha">
+                    <span>Sneha-Chef</span>
+                </div>
+                <div class="team-item">
+                    <img src="./images/Icons/male.png" alt="Sushanth">
+                    <span>Sushanth-Chef</span>
+                </div>
+                <div class="team-item">
+                    <img src="./images/Icons/female.png" alt="Preethi">
+                    <span>Preethi-Chef</span>
+                </div>
+                <div class="team-item">
+                    <img src="./images/Icons/male.png" alt="Kiran">
+                    <span>Kiran-Editor</span>
+                </div>
+                <div class="team-item">
+                    <img src="./images/Icons/male.png" alt="Vijay">
+                    <span>Vijay-Social Media Manager</span>
+                </div>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Follow Us On</h2>
+            <div class="social">
+                <img src="./images/Icons/instagram.png" alt="Instagram">
+                <span>@yummylicious</span>
+            </div>
+            <div class="social">
+                <img src="./images/Icons/youtube.png" alt="Facebook">
+                <span>Yummylicious</span>
+            </div>
+            <div class="social">
+                <img src="./images/Icons/facebook-app-symbol.png" alt="Facebook">
+                <span>Yummylicious</span>
+            </div>
+        </div>
+        <div class="section">
+            <h2>Connect Us</h2>
+            <div class="contact">
+                <span>Email: yummylicious2012@gmail.com</span>
+            </div>
+            <div class="contact">
+                <span>Phone: +91-9876543210</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
